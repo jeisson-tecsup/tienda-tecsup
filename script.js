@@ -1,12 +1,12 @@
 const productos = [
-  { nombre: "Polo TECSUP", precio: 25.00, cantidad: 2 },
-  { nombre: "Taza TECSUP", precio: 18.00, cantidad: 1 }
+  { nombre: "Polo TECSUP", precio: 25.0, cantidad: 2 },
+  { nombre: "Taza TECSUP", precio: 18.0, cantidad: 1 },
 ];
 
 function calcularTotal(lista) {
   let total = 0;
   for (const producto of lista) {
-    total = total + producto.precio;
+    total = total + producto.precio * producto.cantidad;
   }
   return total;
 }
