@@ -3,10 +3,10 @@ const productos = [
   { nombre: "Taza TECSUP", precio: 18.00, cantidad: 1 }
 ];
 
-function calcularTotal(lista) {
+function calcularTotal(lista) { 
   let total = 0;
-  for (const producto of lista) {
-    total = total + producto.precio;
+  for (const producto of lista) { 
+    total = total + producto.precio * producto.cantidad;
   }
   return total;
 }
