@@ -13,3 +13,4 @@ function calcularTotal(lista) {
 
 document.getElementById("total").textContent =
   "Total: S/ " + calcularTotal(productos).toFixed(2);
+// cambio de prueba 
