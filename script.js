@@ -6,7 +6,8 @@ const productos = [
 function calcularTotal(lista) {
   let total = 0;
   for (const producto of lista) {
-    total = total + producto.precio;
+    total = total + producto.precio * producto.cantidad;
+     total = total + producto.precio * producto.cantidad;
   }
   return total;
 }
